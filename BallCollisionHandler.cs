@@ -24,6 +24,7 @@ public class BallCollisionHandler : MonoBehaviour
             gameScript.StopAllCoroutines();
             Debug.Log("Blocked by goalie!");
             
+                gameScript.stopBall();
                 currentPopup = Instantiate(uiPrefab, uiParent);
                 currentPopup.transform.localScale = Vector3.one* 0.5f; // keeps intended size
                 currentPopup.transform.localPosition = Vector3.zero;

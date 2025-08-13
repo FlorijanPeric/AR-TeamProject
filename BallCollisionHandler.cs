@@ -1,3 +1,4 @@
+//BallCollisionHandler.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,6 @@ public class BallCollisionHandler : MonoBehaviour
             gameScript.StopAllCoroutines();
             Debug.Log("Blocked by goalie!");
             
-                gameScript.stopBall();
                 currentPopup = Instantiate(uiPrefab, uiParent);
                 currentPopup.transform.localScale = Vector3.one* 0.5f; // keeps intended size
                 currentPopup.transform.localPosition = Vector3.zero;
@@ -43,14 +43,18 @@ public class BallCollisionHandler : MonoBehaviour
         }
         targetButton.onClick.RemoveAllListeners();
             targetButton.onClick.AddListener(onRestart);
-                
-        target2.onClick.RemoveAllListeners();
-        target2.onClick.AddListener(()=> {
-            Destroy(currentPopup);
-            currentPopup=null;
-            gameScript.resetOther();
-        });
-        }else if(other.CompareTag("Goal")){
+
+            var popupInstance = currentPopup; 
+
+            target2.onClick.RemoveAllListeners();
+            target2.onClick.AddListener(() => {
+                Destroy(popupInstance); 
+                currentPopup = null;
+                gameScript.resetOther();
+            });
+
+        }
+        else if(other.CompareTag("Goal")){
             gameScript.OnGoalScored();
             Debug.Log("Hit the goal");
 

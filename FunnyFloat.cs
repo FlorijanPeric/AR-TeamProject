@@ -1,3 +1,4 @@
+//FunnyFloat.cs
 using UnityEngine;
 
 public class FunnyFloat : MonoBehaviour

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5e683755f93959241b0bed029e714fe7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scoreUi: {instanceID: 0}
+  - soccerBall: {instanceID: 0}
+  - pillarL: {instanceID: 0}
+  - pillarR: {instanceID: 0}
+  - confetR: {instanceID: 0}
+  - confetY: {instanceID: 0}
+  - confetB: {instanceID: 0}
+  - goalieTransform: {instanceID: 0}
+  - goalieAnimator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

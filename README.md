@@ -10,3 +10,5 @@ The final apk that represents the final game is Try4FullBuild.apk . all of our a
 In case you want ios compatible apk-s build and run it out of the zip.
 All of the scripts were mostly done by me (Florijan) with a bit of help from Timotej. The landscape and scene were built by Tristan who also created a coustom animation in case you hit the goal.
 The goalie animations were done and implemented by Timotej
+In case you cannot import this into unity we also have an URL to a zip -> https://univerzaupr-my.sharepoint.com/:u:/g/personal/89231252_student_upr_si/EWl4z_8vmFVPo2a-OO6GoQMBSeNL3tLPWO2HDBuoeqLgjQ?e=mBKabt
+(Warning!! import only the second inner directory or else it will fail)
